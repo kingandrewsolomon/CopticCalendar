@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "PT Sans";
+    src: url("fonts/PT_Sans/PTSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Coptic";
+    src: url("fonts/Coptic/CS-Avva-Shenouda.ttf")
+}
+
+html {
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+html * {
+    font-family: 'PT Sans';
+    font-size: 1em;
+    color: whitesmoke;
+}
+
+body {
+    margin: 35px;
+}
+
+#background li div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    z-index: -1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date {
+    font-family: 'Coptic';
+    font-size: 5.25em;
+}
+
+#settings {
+    background-image: url("images/gear.png");
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    display: block;
+    opacity: 0.5;
+}
+
+#settings:hover {
+    opacity: 1.0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#psalm {
+    flex: 50%;
+    font-size: 1.15em;
+}
+
+.fast-title {
+    font-size: 1.75em;
+    text-decoration: underline;
+}
+
+.reading-title {
+    font-size: 1.75em;
+}
+
+.reading {
+    font-size: 1.35em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#fast-n-feast {
+    flex: 50%;
+}
+
+#synaxarium li a {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    margin: 0 auto;
+    transform: translate(50%);
+}
+
+a.disable {
+    pointer-events: none;
+    cursor: default;
+}
+
+.commemoration {
+    font-size: 1.35em;
+    color: #24ADFF;
+    opacity: 0;
+}
+
+@media screen and (max-width: 500px) {
+	html {
+		overflow: visible;
+	}
+
+	.content {
+		display: block;
+	}
+
+	.date {
+		font-size: 4.5em;
+	}
+
+
+	#synaxarium li a {
+		position: relative;
+		transform: none;
+		bottom: 0px;
+	}
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+
+    8% {
+        opacity: 0.6;
+        animation-timing-function: ease-out;
+    }
+
+    17% {
+        opacity: 0.6;
+
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes titleAnimation {
+    0% {
+        opacity: 0
+    }
+
+    8% {
+        opacity: 1
+    }
+
+    17% {
+        opacity: 1
+    }
+
+    19% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}

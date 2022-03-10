@@ -1,0 +1,42 @@
+{
+    "commemorations": [
+        "The Martyrdom of St. Moses (Moisees) and his Sister Sarah.",
+        "The Martyrdom of St. Agabius, the Soldier, and his Sister Thecla."
+    ],
+    "commemorationsLinks": [
+        "https://www.copticchurch.net/synaxarium/12_26.html#1",
+        "https://www.copticchurch.net/synaxarium/12_26.html#2"
+    ],
+    "Psalm": {
+        "verse": " Let the saints be joyful in glory;  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Let them sing aloud on their beds.   To execute on them the written judgment--  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This honor have all His saints.     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Praise the LORD!",
+        "hyperlink": "https://www.copticchurch.net/cgibin/bible/index.php?r=Psalm+149%3A5+%3B+Psalm+149%3A9&version=NKJV&showVN=1",
+        "section": "Psalm 149:5 ; Psalm 149:9"
+    },
+    "readings": {
+        "Pauline": {
+            "verse": "For we know that the law...",
+            "hyperlink": "https://www.copticchurch.net/cgibin/bible/index.php?r=Rom+7%3A14-27&version=NKJV&showVN=1",
+            "section": "Rom 7:14-27"
+        },
+        "Catholic": {
+            "verse": "Beloved, I beg you as sojourners...",
+            "hyperlink": "https://www.copticchurch.net/cgibin/bible/index.php?r=1Pet+2%3A11-17&version=NKJV&showVN=1",
+            "section": "1Pet 2:11-17"
+        },
+        "Acts": {
+            "verse": "Now God worked unusual miracles by...",
+            "hyperlink": "https://www.copticchurch.net/cgibin/bible/index.php?r=Acts+19%3A11-20&version=NKJV&showVN=1",
+            "section": "Acts 19:11-20"
+        },
+        "Gospel": {
+            "verse": "But before all these things, they...",
+            "hyperlink": "https://www.copticchurch.net/cgibin/bible/index.php?r=Lk+21%3A12-19&version=NKJV&showVN=1",
+            "section": "Lk 21:12-19"
+        }
+    },
+    "monthCoptic": "Mecwri",
+    "monthEnglish": "Mesori",
+    "day": 26,
+    "imageLinks": [],
+    "fastAndFeasts": []
+}

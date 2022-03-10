@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "PT Sans";
+    src: url("fonts/PT_Sans/PTSans-Regular.ttf");
+}
+
+html {
+    background-color: black;
+}
+
+html * {
+    font-family: 'PT Sans';
+    color: whitesmoke;
+}
+
+.heading,
+footer {
+    text-align: center;
+}
+
+footer {
+    width: auto;
+    background-color: rgb(82, 82, 82);
+}
+
+.footer-text {
+    display: block;
+    padding: 12px;
+}
+
+.heading h1 {
+    font-size: 3em;
+}

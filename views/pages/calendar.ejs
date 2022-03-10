@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Coptic Calendar</title>
+</head>
+
+<body>
+    <ul id="background">
+    <% imageLinks.forEach(img => { %>
+	<li><div class="bg" style="background-image: url('images/<%- img %>')"></div></li>
+    <% }); %>
+    </ul>
+    <div class="header">
+        <div class="date text-responsive"><%- monthCoptic %> <%- day %></div>
+        <!-- <div class="hidden-xs">
+            <span id="settings"></span>
+        </div> -->
+    </div>
+    <div class="content">
+        <div class="left-column">
+            <div>
+                <p id="Psalm">
+                    <%- Psalm.section %><br>
+					<% Psalm.verse.split(" & ").forEach(verse => { %>
+					<a href="https://www.copticchurch.net/bible?r=<%= verse.replace(/ /g, "+") %>&version=NKJV">
+					<%- verse %></a>
+					<% }); %>
+                </p>
+            </div>
+            <div id="fast-n-feast">
+                <p class="fast-title">Fasts and Feasts</p>
+                <ul id="events">
+                    <% fastAndFeasts.forEach(fnf => { %>
+                    <li>
+                        <%- fnf %>
+                    </li>
+                    <% }); %>
+                </ul>
+            </div>
+        </div>
+	<div id="daily-reading">
+		<span class="reading-title"><u>Readings of Today</u></span>
+		<ul>
+			<li class="reading">
+				<u>Pauline Epistle</u>
+			</li>
+			<ul>
+				<li id="Pauline">
+					<%= Pauline.section %><br>
+					<% Pauline.verse.split(" & ").forEach(verse => { %>
+						<a href="https://www.copticchurch.net/bible?r=<%= verse.replace(/ /g, "+") %>&version=NKJV">
+						<%= verse %></a>
+					<% }); %>
+				</li>
+			</ul>
+			<li class="reading">
+				<u>Catholic Epistle</u>
+			</li>
+			<ul>
+				<li id="Catholic">
+					<%= Catholic.section %><br>
+					<% Catholic.verse.split(" & ").forEach(verse => { %>
+						<a href="https://www.copticchurch.net/bible?r=<%= verse.replace(/ /g, "+") %>&version=NKJV">
+						<%= verse %></a>
+					<% }); %>
+				</li>
+			</ul>
+			<li class="reading">
+		      		<u>Acts</u>
+				</li>
+				<ul>
+					<li id="Acts">
+						<%= Acts.section %><br>
+						<% Acts.verse.split(" & ").forEach(verse => { %>
+							<a href="https://www.copticchurch.net/bible?r=<%= verse.replace(/ /g, "+") %>&version=NKJV">
+							<%= verse %></a>
+						<% }); %>
+					</li>
+				</ul>
+				<li class="reading">
+					<u>Gospel</u>
+				</li>
+				<ul>
+					<li id="Gospel">
+						<%= Gospel.section %><br>
+                        <% Gospel.verse.split(" & ").forEach(verse => { %>
+    	  	                <a href="https://www.copticchurch.net/bible?r=<%= verse.replace(/ /g, "+") %>&version=NKJV">
+							<%= verse %></a>
+						<% }); %>
+					</li>
+				</ul>
+			</ul>
+		</div>
+    </div>
+    <ul id="synaxarium">
+        <% Synaxarium.forEach((entry, index) => { %>
+        <li><a class="commemoration" href="https://www.copticchurch.net/synaxarium/<%- monthNumber %>_<%- day %>.html#<%= index + 1 %>"><%= entry %></a></li>
+        <% }); %>
+    </ul>
+<script src="main.js" type="text/javascript"></script>    
+</body>
+</html>

@@ -1,0 +1,5 @@
+.vscode/
+*.zip
+*.service
+test.*
+node_modules/
